@@ -31,7 +31,7 @@ const Cart = () => {
     const reqToken = localStorage.getItem('token');
     if (!reqToken) {
       toast.error("You need to be logged in to checkout");
-      return;
+      return; 
     }
 
     const total = Number(cartTotal());
